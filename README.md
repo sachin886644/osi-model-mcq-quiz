@@ -9,7 +9,11 @@ Interactive multiple-choice quiz on the **OSI 7-layer model**.
 
 ## Live site
 
-Published on Netlify after deploy.
+https://osi-model-mcq-quiz.netlify.app
+
+## GitHub
+
+https://github.com/sachin886644/osi-model-mcq-quiz
 
 ## Run locally
 
