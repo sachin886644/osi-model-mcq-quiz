@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OSI Model MCQ Quiz</title>
+  <meta name="description" content="Interactive multiple-choice quiz on the OSI 7-layer model." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <main class="app">
+    <header class="top">
+      <div class="brand">
+        <span class="logo">OSI</span>
+        <div>
+          <h1>OSI Model Quiz</h1>
+          <p>7 layers. 15 questions. Instant feedback.</p>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="pill" id="progress-pill">Question 1 / 15</div>
+        <div class="pill score-pill">Score <strong id="live-score">0</strong></div>
+      </div>
+    </header>
+
+    <div class="progress-track" aria-hidden="true">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+    <section class="card" id="start-screen">
+      <p class="eyebrow">Computer Networks</p>
+      <h2>Test how well you know the OSI model</h2>
+      <p class="lead">
+        One question at a time. Pick an answer, see why it is right or wrong,
+        then move on. Covers layers, PDUs, protocols, and devices.
+      </p>
+      <ul class="facts">
+        <li>15 multiple-choice questions</li>
+        <li>Explanations after every answer</li>
+        <li>No login. Runs entirely in your browser</li>
+      </ul>
+      <button class="btn primary" id="start-btn">Start quiz</button>
+    </section>
+
+    <section class="card hidden" id="quiz-screen">
+      <p class="eyebrow" id="q-tag">Layer knowledge</p>
+      <h2 id="question-text">Question</h2>
+      <div class="options" id="options"></div>
+      <div class="explain hidden" id="explain"></div>
+      <div class="actions">
+        <button class="btn primary hidden" id="next-btn">Next question</button>
+      </div>
+    </section>
+
+    <section class="card hidden" id="result-screen">
+      <p class="eyebrow">Results</p>
+      <h2 id="result-title">Quiz complete</h2>
+      <div class="result-score">
+        <span id="final-score">0</span>
+        <small>/ 15</small>
+      </div>
+      <p class="lead" id="result-msg"></p>
+      <div class="review" id="review"></div>
+      <div class="actions">
+        <button class="btn primary" id="retry-btn">Try again</button>
+      </div>
+    </section>
+
+    <footer>
+      Open Systems Interconnection · Layers 7 → 1 · Application to Physical
+    </footer>
+  </main>
+  <script src="quiz.js"></script>
+</body>
+</html>
